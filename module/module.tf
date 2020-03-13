@@ -1,4 +1,4 @@
-module "name" {
+module "safa" {
   source  = ""
 
   version = ""
