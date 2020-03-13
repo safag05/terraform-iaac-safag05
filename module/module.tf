@@ -1,6 +1,6 @@
 module "safa" {
   source  = ""
 
-  version = ""
+  version = "2.5"
   name    = ""
 }
