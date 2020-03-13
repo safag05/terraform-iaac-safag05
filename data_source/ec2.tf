@@ -1,8 +1,7 @@
 provider "aws" {
   region = "us-west-2"
 }
-
-# Gets ubuntu AMI
+# Gets Ubuntu AMI
 data "aws_ami" "ubuntu" {
   most_recent = true
 
@@ -20,24 +19,19 @@ data "aws_ami" "ubuntu" {
 }
 
 output "UBUNTU_AMI_ID" {
-  value       = "${data.aws_ami.ubuntu.id}"
+  value = "${data.aws_ami.ubuntu.id}"
 }
 
 
 
 
-
-
-
-
-
-# Gets CentOS AMI
+# Gets Centos AMI
 data "aws_ami" "centos" {
   most_recent = true
 
   filter {
     name   = "name"
-    values = "CentOS Linux 7 x86_64 HVM EBS ENA 1901_01-b7*"
+    values = ["CentOS Linux 7 x86_64 HVM EBS ENA 1901_01-b7*"]
   }
 
   filter {
@@ -49,5 +43,5 @@ data "aws_ami" "centos" {
 }
 
 output "CENTOS_AMI_ID" {
-  value       = "${data.aws_ami.ubuntu.id}"
+  value = "${data.aws_ami.ubuntu.id}"
 }
