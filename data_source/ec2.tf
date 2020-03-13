@@ -66,6 +66,15 @@ resource "aws_instance" "web" {
     source      = "test"
     destination = "/tmp/"
     }
+    provisioner "remote-exec" {
+    onnection {
+    type     = "ssh"
+    user     = "centos"
+    private_key = "${file("~/.ssh/id_rsa")}"
+    host     = "${self.public_ip}"
+      }
+        inline = "sudo yum install telnet -y"
+    }
 
   tags = {
     Name = "HelloWorld"
