@@ -1,3 +1,0 @@
-module "safa" {
-  source  = "/tmp"
-}
