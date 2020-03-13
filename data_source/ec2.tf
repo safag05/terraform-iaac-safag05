@@ -46,6 +46,10 @@ output "CENTOS_AMI_ID" {
   value = "${data.aws_ami.ubuntu.id}"
 }
 
+resource "aws_key_pair" "provisioner" {
+  key_name   = "provisioner-key"
+  public_key = "${file("~/.ssh/id_rsa.pub")}"
+}
 
 resource "aws_instance" "web" {
   ami           = "${data.aws_ami.centos.id}"
@@ -55,3 +59,4 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+
