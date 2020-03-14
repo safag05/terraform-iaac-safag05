@@ -1,5 +1,7 @@
 module "wordpress" {
+  name = "wordpress"
   source = "terraform-aws-modules/autoscaling/aws"
+  version = "2.12.0"
   lc_name = "wordpress-lc"
   image_id        = "${data.aws_ami.ubuntu.id}"
   instance_type   = "t2.micro"
