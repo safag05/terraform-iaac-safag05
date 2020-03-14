@@ -1,3 +1,4 @@
+# Creates ASG with LC
 module "wordpress" {
   name = "wordpress"
   source = "terraform-aws-modules/autoscaling/aws"
