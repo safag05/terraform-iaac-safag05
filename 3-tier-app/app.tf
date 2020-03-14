@@ -15,4 +15,17 @@ module "wordpress" {
   max_size                  = 5
   desired_capacity          = 2
   wait_for_capacity_timeout = 0
+
+tags = [
+    {
+      key                 = "Environment"
+      value               = "dev"
+      propagate_at_launch = true
+    },
+    {
+      key                 = "Project"
+      value               = "megasecret"
+      propagate_at_launch = true
+    },
+  ]
 }
