@@ -4,8 +4,8 @@ provider "aws" {
 
 
 terraform {
-  required_version = "~> 0.11.14"
-  provider.aws: version = "~> 2.53"
-  provider.null: version = "~> 2.1"
-  provider.random: version = "~> 2.2"
+  required_version   = "~> 0.11.14"
+  provider.aws       = "~> 2.53"
+  provider.null      = "~> 2.1"
+  provider.random    = "~> 2.2"
 }
