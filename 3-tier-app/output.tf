@@ -1,5 +1,5 @@
 output "full_list" {
-  value       = "${data.terraform_remote_state.dev.*}"
+  value       = "${data.terraform_remote_state.dev.VPC_ID}"
 }
 
 
