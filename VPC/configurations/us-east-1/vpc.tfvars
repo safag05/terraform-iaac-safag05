@@ -10,6 +10,8 @@ az3                  =       "us-east-1c"
 
 
 
+### **** DO NOT CHANGE THE FOLLOWING ****
+
 s3_bucket                       =	"terraform-class-safag"
 s3_folder_region                =	"us-east-1"
 
