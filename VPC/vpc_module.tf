@@ -9,8 +9,8 @@ module "dev" {
   cidr_block3_private = "${var.cidr_block3_private}"
   
   az1                 = "${var.az1}"
-  az1                 = "${var.az2}"
-  az1                 = "${var.az3}"
+  az2                 = "${var.az2}"
+  az3                 = "${var.az3}"
   
   region = "${var.region}"
   cidr_block = "${var.cidr_block}"
