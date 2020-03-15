@@ -10,18 +10,7 @@ Terraform 0.11.14
 
 Steps
 
-Edit the file below
-
-git clone https://github.com/farrukh90/infrastructure.git
-
-cd infrastructure/r1soft/
-
-vi configurations/r1soft.tfvars
-
-
-
-
-
+cd terraform-iaac-safag05/r1soft/
 
 
 source setenv.sh configurations/r1soft.rfvars
