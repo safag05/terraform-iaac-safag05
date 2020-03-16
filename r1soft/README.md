@@ -16,3 +16,5 @@ cd terraform-iaac-safag05/r1soft/
 source setenv.sh configurations/r1soft.rfvars
 
 terraform apply -var-file configurations/r1soft.rfvars
+
+terraforms
