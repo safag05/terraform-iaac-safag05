@@ -5,5 +5,5 @@ output "Domain" {
   value = "${module.r1soft.Domain}"
 }
 output "User" {
- value = "${module.r1soft.User}"1
+ value = "${module.r1soft.User}"
 }
