@@ -8,8 +8,8 @@ vm2_computername         = "vm2"
 vm3_computername         = "vm3" 
 address_space            = "10.0.0.0/16" 
 vnet_name                = "vnet1" 
-location                 = "westus2" 
-ssh_key                  = "your ssh key" 
+location                 = "eastus" 
+ssh_key                  = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDVENqsAUMJg9NsmMRgZzp6ksZCafmNfqsNakvNLGMWp1MZ1NPTaU6T4kRXh+xobWiO3sSEoc1M8MEbJpBiP9WGZjFhWbhRSRY8hdmfGZ0iWn7M1xiOPk9fMS/dh+FTAm0Pdf7Jxa1mKafD7FtafpsTmV2eTl0TaGS9L1NTGOs0gSepoZutcsww6xaxXu8vp4VMvDFJi+ceQFPBBQE7rbAnRtcU0Jumwxi4VxMOcrLFbuqVj+sJo7nkSOwTEp+vJf8bQAcCwqdkMV8j2iAKTfX/p73R3g8rMfkGRJ6geZKFHM69X43Hfy+7ISYfMyEUKHBz/kZU4I1ZLqqghDos6mJb centos@ip-172-31-18-155.eu-west-2.compute.internal" 
 environment              = "dev" 
  
 #OS Information 
